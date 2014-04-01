@@ -1,0 +1,373 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body {
+  font-family: serif;
+  font-size: 15px;
+  color: #f1f1f1;
+  font-weight: 400;
+  background-image: url("../images/bg2.jpg");
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+p {
+  font-family: "Gilda Display", serif;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 0px;
+  color: #423d44;
+  margin: 10px 0px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h2 {
+  color: #f1f1f1;
+  font-size: 28px;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 10px;
+  line-height: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h3 {
+  color: #f1f1f1;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 10px;
+  line-height: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 14px;
+  color: #fff;
+  font-style: italic;
+  letter-spacing: 5px;
+  line-height: 20px;
+}
+
+/* Used to center */
+#container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* Navigation */
+nav {
+  width: 100%;
+  background-color: #252525;
+  height: 70px;
+}
+
+nav h1 {
+  color: #f1f1f1;
+  float: left;
+  padding-left: 10px;
+}
+
+nav ul {
+  float: right;
+  background-color: #252525;
+}
+
+nav ul li {
+   display: inline-block;
+   font-family: "Gilda Display";
+   font-size: 18px;
+   color: #f1f1f1;
+   padding: 30px 30px 10px;
+}
+
+nav ul li a {
+  color: #f1f1f1;
+}
+
+#navbutton {
+  float: right;
+  display: none;
+  padding: 15px 0px;
+}
+
+
+/* Header */
+
+header img {
+  margin: 75px 0px;
+  width: 100%;
+  box-shadow:  -1px 0px 24px 2px rgba(0, 0, 0, 0.33);
+}
+
+
+
+/* Home */
+
+
+.featured {
+  display: block;
+  text-align: left;
+  background-color: #252525;
+  float: left;
+  margin-bottom: 70px;
+  
+}
+
+#main h2 {
+  padding: 40px 48px;
+  float: left;
+}
+
+#main h3 {
+  padding-left: 20px;
+}
+
+.tablet, .mobile {
+  display: none;
+}
+
+.screen {
+  display: initial;
+}
+
+.featured img {
+  width: 50%;
+  float: right;
+}
+
+.gallery {
+  border-right: 20px solid white;
+  width: 50%;
+}
+
+.about {
+  border-left: 20px solid white;
+  width: 50%;
+}
+
+.video {
+  border-right: 20px solid white;
+  width: 33.3%;
+}
+
+.instagram {
+  border-left: 20px solid white;
+  width: 66.6%;
+}
+
+/* About */
+
+#about h2 {
+  line-height: 28px;
+  padding: 20px;
+  text-align: center;
+  background: #252525;
+  margin-bottom: 40px;
+}
+
+#about p {
+  color: #252525;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#about-image {
+  border-right: 20px solid white;
+  width: 50%;
+}
+
+#about-image img {
+  width: 100%;
+}
+
+#about-text {
+  border-left: 20px solid white;
+  background: #ebb5d5;
+  width: 50%;
+  padding: 30px;
+}
+
+/* Gallery */
+
+#gallery-image {
+  background: #fff;
+  width: 50%;
+}
+
+#gallery-image img {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 33%;
+}
+
+#gallery-text {
+  border-left: 20px solid white;
+  background: #ebb5d5;
+  width: 50%;
+  padding: 30px;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+#content {
+  color: #fff;
+  max-width: 940px;
+  margin: 0 auto;
+
+}
+
+#title {
+  font-family: "Gilda Display", serif;
+  font-size: 16px
+
+}
+.active {
+  z-index: 999;
+}
+
+/* Footer */
+
+footer {
+  background-image: url("../images/footer.jpg");
+  clear: both;
+  text-align: center;
+  height: 300px;
+  z-index: -10;
+}
+
+#footer-content {
+  width: 100%;
+  background-color: #252525;
+  height: 120px;
+  padding: 20px;
+}
+
+
+/* Media Queries */
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 1205px) {
+  
+  #container {
+    width: 800px;
+  }
+
+  #main h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 20px;
+  }
+
+  .featured img {
+    width:  100%;
+    float: right;
+  }
+
+  .video, .instagram {
+    width: 50%;
+  }
+
+  .screen, .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: initial;
+  }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 760px) {
+  #container {
+    width: 320px;
+  }
+
+  h1 {
+    clear: both;
+    font-size: 28px;
+  }
+
+  #navbutton {
+    display: block;
+  }
+
+  nav ul{
+    display: none;
+    width: 100%
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  header img {
+    margin: 25px 0px;
+  }
+
+  #main h2, #main h3, #about h2 {
+    font-size: 18px;
+    padding: 0px 20px;
+    letter-spacing: 5px;
+  }
+
+  #about p {
+    font-size: 11px;
+  }
+
+  .featured {
+    margin-bottom: 25px;
+  }
+
+  .gallery, .about, .video, .instagram, #about-image, #about-text, #gallery-image, #gallery-text, .featured img {
+    width: 100%;
+    border: 0px;
+  }
+
+  #content img {
+    width: 50%;
+  }
+
+  .screen, .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: initial;
+  }
+
+  footer h4 {
+    font-size: 8px;
+  }
+}
+
+
+
